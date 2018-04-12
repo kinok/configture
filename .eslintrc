@@ -1,0 +1,24 @@
+{
+  "env": {
+    "es6": true,
+    "mocha": true,
+    "node": true
+  },
+  "extends": "airbnb-base",
+  "plugins": ["prettier"],
+  "rules": {
+    "no-underscore-dangle": [
+      "error", {
+        "allowAfterThis": true
+      }
+    ],
+    "arrow-parens": "off",
+    "prettier/prettier": [
+      "error", {
+        "trailingComma": "all",
+        "singleQuote": true,
+        "parser": "flow"
+      }
+    ]
+  }
+}

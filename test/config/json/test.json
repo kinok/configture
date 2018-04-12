@@ -1,0 +1,9 @@
+{
+  "default": {
+    "randomValue": 123,
+    "json": true
+  },
+  "preprod": {
+    "json": "works"
+  }
+}
