@@ -1,0 +1,12 @@
+os:
+- linux
+language: node_js
+node_js: '8'
+sudo: required
+notifications:
+  email:
+  - minthilith@gmail.com
+  slack:
+script:
+- npm test
+- npm run eslint
