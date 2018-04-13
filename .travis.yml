@@ -10,3 +10,5 @@ notifications:
 script:
 - npm test
 - npm run eslint
+- npm run coverage
+- cat ./coverage/lcov.info | ./node_modules/.bin/codacy-coverage
