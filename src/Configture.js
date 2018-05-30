@@ -98,7 +98,7 @@ class Configture {
     const currentConfig = reference || config;
     return _.forEach(config, (value, key) => {
       const prefixedKey = `${prefix}.${key}`;
-      if (_.isObject(value)) {
+      if (_.isObject(value) && !_.has(process.env, this._toEnv(prefixedKey))) {
         this._injectEnv(value, prefix === '' ? key : prefixedKey, config[key]);
       } else if (_.has(process.env, this._toEnv(prefixedKey))) {
         currentConfig[key] = process.env[this._toEnv(prefixedKey)];
