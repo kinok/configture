@@ -1,6 +1,6 @@
 {
   "name": "configture",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "Lightwell & simple configuration loader module",
   "main": "src/Configture.js",
   "scripts": {
