@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/kinok/configture#readme",
   "dependencies": {
-    "js-yaml": "^3.11.0",
+    "js-yaml": "^4.1.0",
     "lodash": "^4.17.5"
   },
   "devDependencies": {
